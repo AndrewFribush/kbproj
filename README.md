@@ -8,14 +8,14 @@ https://projecteuler.net/problems
 A list of problems here along with what languages they're done in. An exclamation point (eg, Ruby!), means the solution is incomplete.
 *p1: Ruby
 *p2: C
-*p3: Bash!
-*p4: Python!
+*p3: Python
+*p4: Python
 *p5: JavaScript
-*p6: C++
-*p7:
+*p6: 
+*p7: 
 *p8:
 *p9:
-*p10:
+*p10: 
 *p11:
 *p12:
 *p13:
@@ -55,4 +55,4 @@ A list of problems here along with what languages they're done in. An exclamatio
 *p47:
 *p48:
 *p49:
-*p50: Ruby!,
+*p50: Ruby!
