@@ -8,4 +8,4 @@ def Palindrome(num):
 		return false
 
 def name():
-	for i in
+	for i in 
