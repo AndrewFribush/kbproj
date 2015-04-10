@@ -11,7 +11,7 @@ A list of problems here along with what languages they're done in. An exclamatio
 * p3: Python
 * p4: Python
 * p5: JavaScript
-* p6: C++!
+* p6: C++
 * p7: C#
 * p8:
 * p9:
