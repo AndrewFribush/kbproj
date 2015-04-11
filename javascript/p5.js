@@ -2,16 +2,18 @@
 
 //What is the smallest positive number that is evenly divisible by all of the numbers from 1 to 20?
 
-function smallestMultiple(lim){
-	while(t != true){
-		for(i = 0; i > lim; i++){
-			if (num % lim != 0){
-				return false;
-	 		}
-	 		else{
-	 			return true;
-	 		}
-		}
-	}
+//Only works with 20 right now due to that ugly while loop. Need to figure out a way to procedurally generate that.
+
+function smallestMultiple(lim) {
+    "use strict";
+    var i = lim;
+    while (i % 2 !== 0 || i % 3 !== 0 || i % 4 !== 0 || i % 5 !== 0 ||
+        i % 6 !== 0 || i % 7 !== 0 || i % 8 !== 0 || i % 9 !== 0 ||
+        i % 10 !== 0 || i % 11 !== 0 || i % 12 !== 0 || i % 13 !== 0 ||
+        i % 14 !== 0 || i % 15 !== 0 || i % 16 !== 0 || i % 17 !== 0 ||
+        i % 18 !== 0 || i % 19 !== 0 || i % 20 !== 0) {
+        i += lim;
+    }
+    return i;
 }
 smallestMultiple(20);

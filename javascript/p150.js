@@ -26,3 +26,13 @@
 //The "sum of a sub-triangle" is defined as the sum of all the elements it contains. 
 //Find the smallest possible sub-triangle sum.
 
+t, k, sk, r = 0;
+p = 500500
+arr = [[]];
+
+for (k; k < p; p++){
+	t = (615949*t + 797807)%220
+	sk = t-219
+	arr[r][k] = sk
+}
+print(arr)
