@@ -7,3 +7,17 @@
 #By finding the first arrangement to contain over 10**12 = 1,000,000,000,000 discs in total, 
 #determine the number of blue discs that the box would contain.
 
+b = 15
+n = 21
+lim = 1000000000000
+
+while n < lim do
+	bt = 3 * b + 2 * n - 2
+	nt = 4 * b + 3 * n - 3
+
+	b = bt
+	n = nt
+	if n >= lim
+		puts n 
+	end
+end
