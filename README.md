@@ -56,3 +56,5 @@ A list of problems here along with what languages they're done in. An exclamatio
 * p48:
 * p49:
 * p50: Ruby!
+* p100: Ruby
+
