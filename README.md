@@ -13,6 +13,7 @@ A list of problems here along with what languages they're done in. An exclamatio
 * p5: JavaScript
 * p6: C++
 * p7: C#
+* p8: Ruby!
 * p50: Ruby!
 * p100: Ruby
 * p150: Javascript!
