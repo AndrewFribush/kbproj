@@ -46,7 +46,7 @@ def adjacentNumProd(num)
 	end
 end
 
-for i in given.to_s.length
+for i in [0..given.to_s.length]
 	num = given.to_s[i..(i+12)].to_i
 	num = adjacentNumProd(num)
 	if num > largest
