@@ -28,5 +28,5 @@ int main(){
             break;
         }
     }
-    return 1;
+    return c;
 }
