@@ -8,20 +8,25 @@
 
 //Very simple brute force. I should make it more elegant at some point, but this works fine since the operation is simple.
 
-int a = 0, b = 0, c = 0;
-int sum = 1000;
-bool found = false;
-for (a = 1; a < sum / 3; a++) {
-    for (b = a; b < sum / 2; b++) {
-        c = sum - a - b;
+#include <stdio.h>
+
+int main(){
+    int a = 0, b = 0, c = 0, found = 0;
+    int sum = 1000;
+
+    for (a = 1; a < (sum / 3); a++) {
+        for (b = a; b < (sum / 2); b++) {
+            c = (sum - a - b);
  
-        if (a * a + b * b == c * c) {
-            found = true;
+            if ((a * a) + (b * b) == (c * c)) {
+                found = 1;
+                break;
+            }
+        }
+ 
+        if (found == 1) {
             break;
         }
     }
- 
-    if (found) {
-        break;
-    }
+    return 1;
 }
