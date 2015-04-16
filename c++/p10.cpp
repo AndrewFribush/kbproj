@@ -6,6 +6,8 @@
 
 #include <stdio.h>
 
+//why is this in c#?
+
 int main(){
 	public int[] ESieve(int upperLimit) {
     	int sieveBound = (int)(upperLimit - 1) / 2;
