@@ -3,7 +3,7 @@
 
 phi = 1.61803398875	
 
+//i is the number of digits -1.
 FibDigits = function(i){
-	n = log(10)*i+log(5)/2/log(phi)
+	return Math.ceil((Math.log(10)*i+(Math.log(5)/2))/Math.log(phi))
 }
-
