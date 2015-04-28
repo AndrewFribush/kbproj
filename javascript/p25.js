@@ -1,0 +1,5 @@
+//
+
+FibDigits = function(){
+	
+}
