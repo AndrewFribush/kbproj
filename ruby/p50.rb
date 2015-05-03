@@ -8,44 +8,29 @@
 #Which prime, below one-million, can be written as the sum of the most consecutive primes?
 
 #generatePrimes is complete. consecutivePrimeSum always generates a prime number, but not the right one.
-require 'mathn'
 
-def generatePrimes(limit)
-	i = (0..limit).to_a
-	i[0] = i[1] = nil
-	i.each { |j| next unless j
-		break if j * j > limit
-		(j * j).step(limit, j) { |k| i[k] = nil }
-	}
-	i.compact!
-	return i
+
+#Full of quasi-code, needs to be rubified
+lim = 1000000
+result = 0
+numPrimes = 0
+primes = ESieve(1,limit)
+primeSum = primes.length + 1
+
+primeSum[0] = 0;
+
+# Need to fix this into ruby for codes
+for (int i = 0; i < primes.length; i++):
+    primeSum[i+1] = primeSum[i] + primes[i];
 end
 
-def consecutivePrimeSum(limit)
-	#bring in an array of primes to limit
-	i = generatePrimes(limit)
-	j, ka, kc, t = 0, 0, 0, 0
-	while j < limit
-		#add the term in i to j
-		j += i[(ka + t)]
-		#count every time this operation is performed
-		ka += 1
-		#ignore if the sum isn't prime
-		if j.prime?
-			#ignore if the number of terms isn't larger than a previous number of terms
-			if ka > kc
-				#set ka as the next kc
-				kc = ka
-				#set counter to zero
-				ka = 0
-				#counter so that i starts at an additional term
-				t += 1
-				#store j as js
-				js = j
-			end
-		end
-	end
-	puts js
-end
-
-consecutivePrimeSum(100)
+for (int i = numberOfPrimes; i < primeSum.Length; i++) {
+    for (int j = i-(numberOfPrimes+1); j >= 0; j--) {
+        if (primeSum[i] - primeSum[j] > limit) break
+ 
+        if (BinarySearch(primes, primeSum[i] - primeSum[j]) >= 0) {
+            numberOfPrimes = i - j;
+            result = primeSum[i] - primeSum[j];
+        }
+    }
+}
