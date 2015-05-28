@@ -17,6 +17,7 @@ A list of problems here along with what languages they're done in. An exclamatio
 * p9: C
 * p10: Python
 * p25: JavaScript
+* p31: Python
 * p50: Ruby!
 * p60: C#
 * p75: C#
